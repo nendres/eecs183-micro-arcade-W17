@@ -250,6 +250,9 @@ Game game;
 void setup() {
   Serial.begin(9600);
   pinMode(BUTTON_PIN_NUMBER, INPUT);
+  
+  matrix.fillScreen(WHITE.to_333());
+  
   matrix.begin();
 }
 
